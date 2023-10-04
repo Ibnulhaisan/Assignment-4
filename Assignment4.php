@@ -26,13 +26,13 @@ public function getFormattedPrice() {
 public function showDetails()
 {
     echo "Product Details :"."\n";
-    echo "ID:".$this->getId()."\n";
-    echo "Name:".$this->getName()."\n";
-    echo "Price:".$this->getPrice();
+    echo "- ID:".$this->getId()."\n";
+    echo "- Name:".$this->getName()."\n";
+    echo "- Price:$".$this->getPrice();
 }
 }
 
-$product = new Product(1,"Book",20);
+$product = new Product(1, 'T-shirt', 19.99);
 $product->showDetails();
 
 
